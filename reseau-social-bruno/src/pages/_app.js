@@ -1,5 +1,5 @@
+import "../../node_modules/bootstrap/dist/css/bootstrap.css"
 import "../styles/index.scss"
-import '@/styles/globals.css'
 
 export default function App({ Component, pageProps }) {
   return <Component {...pageProps} />

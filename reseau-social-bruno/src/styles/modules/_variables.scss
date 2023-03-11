@@ -1,0 +1,64 @@
+/*général reset css*/
+
+html,
+body,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+}
+
+a,
+li {
+  color: inherit !important;
+  text-decoration: none !important;
+  list-style-type: none !important;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*colors*/
+
+$background1 : #f0eee9;
+$background2 : #e1e0df;
+$background3 : #d9d9d9;
+$main : #344d59;
+
+.background1 {
+    background: $background1;
+}
+
+.background3 {
+  background: $background3;
+}
+
+.main-color {
+  color: $main;
+}
+
+/*fonts*/
+
+@font-face {
+    font-family: "ubuntu-regular";
+    src: url("../../assets/fonts/Ubuntu-Regular.ttf");
+}
+
+@font-face {
+  font-family: "ubuntu-bold";
+  src: url("../../assets/fonts/Ubuntu-Bold.ttf");
+}
+
+.ubuntu-regular {
+    font-family: "ubuntu-regular";
+}
+
+.ubuntu-bold {
+  font-family: "ubuntu-bold";
+}
+
+/*input*/
+
+
+

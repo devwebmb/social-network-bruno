@@ -1,0 +1,20 @@
+.loginForm {
+  .form-control::placeholder {
+    color: $main;
+    font-weight: 700;
+    font-family: "ubuntu-regular";
+  }
+
+  .form-control:focus {
+    color: $main;
+    font-weight: 700;
+    border-color: $main;
+    box-shadow: none;
+  }
+
+  .border-input {
+  border-color: $main;
+  border-width: 3px;
+  font-weight: 700;
+}
+}
