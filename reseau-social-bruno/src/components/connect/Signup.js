@@ -2,8 +2,10 @@ import React from "react";
 import { faUser, faLock, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export default function Signup() {
-  return (
+export default function Signup(props) {
+  console.log(props);
+
+   return (
     <form className="signupForm col-lg-3 col-md-6 col-8 mx-auto ">
       <div className="position-relative mb-3">
         <input
@@ -63,9 +65,7 @@ export default function Signup() {
           className="form-check-input ms-1"
           id="exampleCheck1"
         />
-        <label
-          className="form-check-label main-color fw-bold ms-1"
-        >
+        <label className="form-check-label main-color fw-bold ms-1">
           Acceptez les CGU
         </label>
       </div>
@@ -75,9 +75,11 @@ export default function Signup() {
       >
         INSCRIPTION
       </button>
-      <p className="d-flex justify-content-center">
-        Vous possédez déjà un compte ?&nbsp;{" "}
-        <span className="fw-bold">Connexion</span>
+      <p className="text-center">
+        Vous possédez déjà un compte?&nbsp;
+        <a className="fw-bold cursor-pointer" onClick={props.onPropChange} >
+          Connexion
+        </a>
       </p>
     </form>
   );

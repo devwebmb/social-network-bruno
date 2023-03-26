@@ -2,7 +2,7 @@ import React from "react";
 import { faUser, faLock } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export default function LoginForm() {
+export default function LoginForm(props) {
   return (
     <form className="loginForm col-lg-3 col-md-6 col-8 mx-auto ">
       <div className="position-relative mb-3">
@@ -37,7 +37,10 @@ export default function LoginForm() {
       >
         CONNEXION
       </button>
-      <button className="col-12 mb-3 main-color fw-bold rounded py-2 signup-btn ">
+      <button
+        className="col-12 mb-3 main-color fw-bold rounded py-2 signup-btn "
+        onClick={props.onPropChange}
+      >
         INSCRIPTION
       </button>
     </form>
