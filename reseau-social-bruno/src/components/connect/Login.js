@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function LoginForm() {
   return (
-    <form className="loginForm col-lg-3 col-md-6 mx-auto ">
+    <form className="loginForm col-lg-3 col-md-6 col-8 mx-auto ">
       <div className="position-relative mb-3">
         <input
           type="text"
@@ -18,7 +18,7 @@ export default function LoginForm() {
           <FontAwesomeIcon icon={faUser} />
         </span>
       </div>
-      <div className="position-relative">
+      <div className="position-relative mb-5">
         <input
           type="text"
           name="password"
@@ -31,6 +31,15 @@ export default function LoginForm() {
           <FontAwesomeIcon icon={faLock} />
         </span>
       </div>
+      <button
+        type="submit"
+        className="col-12 mb-3 px-3 py-2 background3 border-0 main-color fw-bold rounded login-btn"
+      >
+        CONNEXION
+      </button>
+      <button className="col-12 mb-3 main-color fw-bold rounded py-2 signup-btn ">
+        INSCRIPTION
+      </button>
     </form>
   );
 }

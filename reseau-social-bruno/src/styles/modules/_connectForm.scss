@@ -1,4 +1,4 @@
-.loginForm {
+.loginForm, .signupForm {
   .form-control::placeholder {
     color: $main;
     font-weight: 700;
@@ -9,12 +9,31 @@
     color: $main;
     font-weight: 700;
     border-color: $main;
-    box-shadow: none;
+    box-shadow: none !important;
   }
 
   .border-input {
-  border-color: $main;
-  border-width: 3px;
-  font-weight: 700;
-}
+    border-color: $main;
+    border-width: 3px;
+    font-weight: 700;
+  }
+
+  .login-btn {
+    transition: 0.3s;
+
+    &:hover {
+      background: $main;
+      color: $background3;
+    }
+  }
+  .signup-btn {
+    transition: 0.3s;
+    border-color: $main;
+
+    &:hover {
+      background: $main;
+      color: white;
+      border-color: $main;
+    }
+  }
 }

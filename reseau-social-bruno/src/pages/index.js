@@ -3,17 +3,18 @@ import { useEffect } from "react";
 import Logo from "../../public/images/logo.webp";
 import axios from "axios";
 import Login from "../components/connect/Login";
+import Signup from "../components/connect/Signup";
 
 export default function Home() {
   useEffect(() => {
     axios
-      .get(`http://127.0.0.1:3333/user/7/profile`)
+      .get(`http://127.0.0.1:3333/user/13`)
       .then((data) => console.log(data));
   });
   return (
     <div className="home d-flex align-items-center flex-column">
-      <div className="col-lg-3 col-md-6 mx-auto d-flex justify-content-center my-5 ">
-        <div className="w-50">
+      <div className="col-lg-3 col-md-6 col-8 mx-auto d-flex justify-content-center my-5 ">
+        <div className=" logo">
           <Image
             alt="Logo de Code Watchtower"
             src={Logo}
@@ -22,6 +23,7 @@ export default function Home() {
         </div>
       </div>
       <Login></Login>
+      <Signup></Signup>
     </div>
   );
 }
