@@ -1,12 +1,12 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import Logo from "../../public/images/logo.webp";
-import axios from "axios";
 import Login from "../components/connect/Login";
 import Signup from "../components/connect/Signup";
 
 export default function Home() {
   const [connectDisplay, setConnectDisplay] = useState(true)
+  console.log(process.env.API_URL);
 
   const changeDisplay = () => {
     setConnectDisplay(!connectDisplay)
